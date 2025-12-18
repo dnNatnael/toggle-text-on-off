@@ -1,0 +1,75 @@
+/* Page layout */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s ease;   /* Smooth transition */
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Heading */
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    transition: color 0.4s ease;              /* Smooth text color */
+}
+
+/* OFF state */
+.off {
+    color: #d32f2f;                           /* Red */
+}
+
+/* ON state */
+.on {
+    color: #2e7d32;                           /* Green */
+}
+
+/* Button */
+button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #1976d2;
+    color: white;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;         /* Smooth effects */
+}
+
+button:hover {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+}
